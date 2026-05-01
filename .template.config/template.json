@@ -1,0 +1,42 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "AB-programming",
+  "classifications": [
+    "Web/API"
+  ],
+  "name": "Dotnet8-Api-Template",
+  "identity": "MyCompany.MyApiTemplate",
+  "shortName": "dotnet8-api-template",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "Dotnet8ApiTemplate",
+  "preferNameDirectory": true,
+  "symbols": {
+    "DbCatalog": {
+      "type": "parameter",
+      "description": "Database name (Initial Catalog)",
+      "datatype": "text",
+      "replaces": "$catalog$",
+      "defaultValue": "dotnet8-api-template",
+      "isRequired": true
+    },
+    "DbUserId": {
+      "type": "parameter",
+      "description": "Database user ID",
+      "datatype": "text",
+      "replaces": "$userid$",
+      "defaultValue": "sa",
+      "isRequired": true
+    },
+    "DbPassword": {
+      "type": "parameter",
+      "description": "Database password",
+      "datatype": "text",
+      "replaces": "$password$",
+      "defaultValue": "123456",
+      "isRequired": true
+    }
+  }
+}
